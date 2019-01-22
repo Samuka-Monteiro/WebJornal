@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Web Jornal | Pagina Inicial</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/validarNoticia.css">
+
+    <!-- sweet alerts-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+</head>
+
+<body style="background-color:#E5E4E2">
+
+    <!-- Start your project here-->
+
+    <!--Main Navigation-->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark black scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="https://ea8-cfportela.c9users.io/paginaInicial">
+                    <strong>
+                        <img src="img/logo wj.png" alt="Logo" style="width:120px;" class="img-fluid">
+                    </strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ">
+
+                    </ul>
+
+
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Notícias</a>
+                            <div class="dropdown-menu">
+                                <div id="teste0">
+                                    <a class="dropdown-item " href="#" name="noticia.view">Principais notícias</a>
+                                        <a class="dropdown-item "name="todasNoticias.view">Todas as notícias</a>
+                                        <a class="dropdown-item" href="#" id="minhasNoticias" name="minhasNoticias.view" >Minhas notícias</a>
+                                        <div class="dropdown-divider" id="divider"></div>
+                                </div>
+                               
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#adicionarNoticiaModal" id="addNews">Adicionar notícias</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" id="meuPerfil">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Perfil</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginAvatar">Meu perfil</a>
+                                <a class="dropdown-item" href="#" onclick="myFunction()">Sair</a>
+                            </div>
+                        </li>
+                        <!--<li class="nav-item" id="filtro">-->
+                        <!--    <a class="nav-link" href="#!" id="filtros.view">Filtros</a>-->
+                        <!--</li>-->
+                        <li class="nav-item" id="teste2">
+                            <a class="nav-link" href="#!" id="grafico.view">Graficos</a>
+                        </li>
+                        <li class="nav-item"  id="log">
+                            <a class="nav-link" href="#!" data-toggle="modal" data-target="#fullHeightModalRight">Login</a>
+                        </li>
+                        <li class="nav-item" id="reg">
+                            <a class="nav-link" href="registo.html">Registar</a>
+                        </li>
+                        <li id="dropdownAdmn">
+
+                            <div class="dropdown">
+                                <i class="fa fa-cogs fa-1x pt-3 pl-4 " id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    aria-hidden="true" style="color:#FFFFFF"></i>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu3" id="teste1">
+                                    <a class="dropdown-item" href="#" id="validarNoticia.view">Validar notícias</a>
+
+                                    <a class="dropdown-item" href="#" id="validarUser.view">Validar registos</a>
+                                    <div class="dropdown-divider"></div>
+                                    <!--<a class="dropdown-item" href="#" id="gerirFiltros.view">Filtros</a>-->
+                                    
+                                    <a class="dropdown-item" href="#" id="gerirRacio.view">Definir o rácio</a>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="pt-5 mt-2" id="contentBody">
+
+
+
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer>
+
+    </footer>
+    <!--Footer-->
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+    
+
+    <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>-->
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            function getEventTarget(e) {
+                e = e || window.event;
+                return e.target || e.srcElement;
+            }
+            function load_home(var1, var2) {
+                $.ajax({
+                    type: "GET",
+                    url: "../" + var2 + ".html",
+                    data: {},
+                    success: function (data) {
+                        $("#" + var1).html(data);
+
+                    },
+                    error: function (data, err, err2) {
+                        console.log(data);
+                        console.log(err);
+                        console.log(err2);
+                        console.log(err2);
+                    }
+                })
+                var body = document.body,
+                    html = document.documentElement;
+            }
+            var idMenu = document.getElementById("teste0");
+            var idMenu1 = document.getElementById("teste1");
+            var idMenu2 = document.getElementById("teste2");
+            var idMenuFiltro = document.getElementById("filtro");
+            idMenu.onclick = function (event) {
+                var target = getEventTarget(event);
+                var targetID = target.name;
+                console.log(targetID);
+                load_home("contentBody", targetID);
+            };
+            idMenu1.onclick = function (event) {
+                var target = getEventTarget(event);
+                var targetID = target.id;
+                console.log(targetID);
+                load_home("contentBody", targetID);
+            };
+            idMenu2.onclick = function (event) {
+                var target = getEventTarget(event);
+                var targetID = target.id;
+                console.log(targetID);
+                load_home("contentBody", targetID);
+            };
+            // idMenuFiltro.onclick = function (event) {
+            //     var target = getEventTarget(event);
+            //     var targetID = target.id;
+            //     console.log(targetID);
+            //     load_home("contentBody", targetID);
+            // };
+
+            load_home("contentBody", 'noticia.view');
+        });
+
+    </script>
+
+
+    <!--Modal: Login with Avatar Form modal perfil-->
+    <div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Header-->
+                <div class="modal-header">
+                    <img src="http://www.ossline.com/media/User-Icon.png" class="img-fluid z-depth-1 rounded-circle" alt="avatar" class="rounded-circle img-responsive">
+                </div>
+                <!--Body-->
+                <div class="modal-body text-center mb-1">
+
+                    <h5 class="mt-1 mb-2" id="nomeUtili"></h5>
+                    <h6 class="mt-1 mb-2" id="emailUtili"></h6>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-primary mt-1" id="btnP1" data-toggle="modal" data-target="#mudarPasswordModal">Mudar a password</button>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: Login with Avatar Form-->
+
+
+
+
+
+    <!-- Modal -->
+    <!-- Full Height Modal Right modal login-->
+    <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-right" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="POST" id="login">
+                    <div class="modal-body">
+                        <div class="pb-5 text-center justify-content-center">
+
+                            <img src="http://www.ossline.com/media/User-Icon.png" class="img-fluid z-depth-1 rounded-circle" alt="Responsive image" id="imgPerfil">
+
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input type="email" id="email" name="email" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="email">Email</label>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fa fa-lock prefix grey-text"></i>
+                            <input type="password" id="password" name="password" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="password">Password</label>
+                        </div>
+                        <div class="md-form-error mt-2" id ="error" style=" font-size:12px; color:red; display: none"><i class="fa fa-exclamation-circle pr-2" aria-hidden="true"></i>Email ou password errado!</div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal -->
+    <!-- modal adicionar noticia-->
+    <div class="modal fade right" id="adicionarNoticiaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-full-height modal-right" role="document" style="height: auto">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Adicionar notícias</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="formAdicionarNoticia">
+                <div class="modal-body">
+
+                    <div class="md-form mb-5">
+                        <input type="text" class="form-control validate" id="titulo" required>
+                        <label data-error="wrong" data-success="right" for="nome">Titulo</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <input type="text" class="form-control validate" id="fonte">
+                        <label data-error="wrong" data-success="right" for="fonte">Fonte</label>
+                    </div>
+                    <div class="md-form mb-5">
+                        <input type="text" class="form-control validate" id="autor">
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass">Autor</label>
+                    </div>
+                    <div class="md-form mb-5">
+                        <input type="text" class="form-control validate" id="link">
+                        <label data-error="wrong" data-success="right" for="link">Link da Imagem</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <textarea type="text" class="md-textarea form-control validate" rows="2" id="descricao" required></textarea>
+                        <label for="descricao">Descrição</label>
+                    </div>
+
+                    <div class="md-form mb-2">
+                        <textarea type="text" class="md-textarea form-control validate" rows="3" id="texto" required></textarea>
+                        <label for="texto">Texto</label>
+                    </div>
+                    
+                    <div id="checkboxlist">
+                        <div><input type="checkbox" value="Arte" class="chk">Arte</div>
+                        <div><input type="checkbox" value="Design" class="chk">Design</div>
+                        <div><input type="checkbox" value="Arquitetura" class="chk">Arquitetura</div>
+                        <div><input type="checkbox" value="Tecnologias" class="chk">Tecnologias</div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <input type="submit" class="btn btn-primary" value="Adicionar">
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+    <!-- modal mudar nome-->
+    <!--<div class="modal fade right" id="mudarNomeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+    <!--    <div class="modal-dialog modal-full-height modal-right" role="document">-->
+    <!--        <div class="modal-content">-->
+
+    <!--            <div class="modal-header">-->
+    <!--                <h5 class="modal-title" id="exampleModalLabel">Mudar nome</h5>-->
+    <!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+    <!--                    <span aria-hidden="true">&times;</span>-->
+    <!--                </button>-->
+    <!--            </div>-->
+    <!--            <form id="alterarNome">-->
+    <!--                <div class="modal-body">-->
+    <!--                    <div class="md-form mb-5">-->
+
+    <!--                        <input type="text" class="form-control validate" id="nomeU" required>-->
+    <!--                        <label data-error="wrong" data-success="right" for="nomeU">Antigo nome</label>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="md-form mb-4">-->
+    <!--                        <input type="text" class="form-control validate" id="novoNomeU" required>-->
+    <!--                        <label data-error="wrong" data-success="right" for="novoNomeU">Novo nome</label>-->
+    <!--                    </div>-->
+
+    <!--                </div>-->
+    <!--                <div class="modal-footer d-flex justify-content-center">-->
+    <!--                    <input type="submit" class="btn btn-primary" value="Mudar nome">-->
+
+    <!--                </div>-->
+    <!--            </form>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+
+
+
+    <!-- modal mudar password-->
+    <div class="modal fade right" id="mudarPasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-right" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Mudar a password</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="alterarPassword">
+                    <div class="modal-body">
+
+                        <div class="md-form mb-4">
+                            <input type="password" class="form-control validate" id="passN" minlength="6" required>
+                            <label data-error="minimo_6_caracteres" data-success="certo" for="passN">Nova password</label>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <input type="password" class="form-control validate mt-5" id="passC" minlength="6" required>
+                            <label data-error="minimo_6_caracteres" data-success="certo" for="passC">Confirmar password</label>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <input type="submit" class="btn btn-primary" value="Mudar password">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="../ajax/adicionarNoticia.js"></script>
+     <script type="text/javascript" src="../ajax/logout.js"></script>
+     <script type="text/javascript" src="../ajax/login.js"></script>
+
+
+<!--back to top-->
+<button class="back-to-top" type="button"></button>
+<script>
+    // Back to top
+    var amountScrolled = 200;
+    var amountScrolledNav = 25;
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > amountScrolled) {
+            $('button.back-to-top').addClass('show');
+        } else {
+            $('button.back-to-top').removeClass('show');
+        }
+    });
+
+    $('button.back-to-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+
+    // Ignore this
+    // This is just for content manipulation
+    var skeleton = '<div class="skeleton"><div class="skeleton-wrapper"><div class="skeleton-wrapper-inner"><div class="skeleton-wrapper-body"><div class="skeleton-avatar"></div><div class="skeleton-author"></div><div class="skeleton-label"></div><div class="skeleton-content-1"></div><div class="skeleton-content-2"></div><div class="skeleton-content-3"></div></div></div></div></div>';
+    for (var i = 0; i < 10; i++) {
+        $('#content').append(skeleton);
+    }
+
+    // Add waves effect
+    Waves.attach('button.back-to-top', 'waves-effect');
+    Waves.init();
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<script type="text/javascript" src="../ajax/validarNoticia.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+<div class="container pt-5 mt-5" style="background-color:#FFFFFF">
+        <section class="magazine-section my-5 pl-4 pb-5">
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Validar notícias</h2>
+            <!-- Section description -->
+            <p class="text-center dark-grey-text w-responsive mx-auto mb-5">
+                Valide as notícias adicionadas pelos usuários da Web jornal, seguindo esses <a href="/criteriosAvaliacao" target="_blank">critérios de avaliação</a>.
+            </p>
+
+
+            <div class="panel panel-default">
+                <div id="TabelaRegistos" class="panel-body">
+
+                    
+                </div>
+
+            </div>
+        </section>
+        
+        <div class="modal fade right" id="verNoticiaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-full-height modal-right" role="document" style="height: auto">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Validar Noticia</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Zoom effect-->
+            <div class="view overlay zoom pl-4">
+                <img style="max-height:200px;" id="modalIdLink" src="" class="img-fluid" alt="zoom">
+            </div>
+            
+            <div class="modal-body pt-4">
+                <p class="modal-itens">
+                    Titulo:
+                    <a id="modalIdTitle"></a>
+                </p>
+                <p class="modal-itens">
+                    Fonte:
+                    <a id="modalIdFonte"></a>
+                </p>
+                <p class="modal-itens">
+                    Autor:
+                    <a id="modalIdAutor"></a>
+                </p>
+                <p class="modal-itens">
+                    Descrição:
+                    <a id="modalIdDescricao"></a>
+                </p>
+                <p class="modal-itens">
+                    Texto:
+                    <a id="modalIdTexto"></a>
+                </p>
+                <p class="modal-itens">
+                    Categorias:
+                    <a id="modalIdCateg">
+                        <p>
+                            <ul class=""></ul>
+                        </p>
+                    </a>
+                </p>
+
+            </div>
+            <div class="modal-footer">
+                 <button id="btnRegeitar" type="button" class="btn btn-danger" data-toggle="modal" data-target="#motivoNoticiaModal">Rejeitar</button>
+                <button id="btnValidar" type="button" class="btn btn-primary">Validar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+        <div class="modal fade" id="motivoNoticiaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Apresentar Motivo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formMotivo" action="/regeitarNoticia">
+                            <div class="form-group">
+                                <label for="idMotivo">
+                                    <h5>Motivo:</h5>
+                                </label>
+                                <br>
+                                
+                                <textarea id="idMotivo" cols="55" rows=3></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        <button id="btnRemover" type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            

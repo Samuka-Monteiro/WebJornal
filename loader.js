@@ -1,0 +1,6 @@
+const server = require('./app/server')
+require('./app/assets/connect')
+const router = require('./app/routes/routes')
+const routerPages = require('./app/routes/freeRoute')
+server.use('/', routerPages)
+server.use('/app', router)

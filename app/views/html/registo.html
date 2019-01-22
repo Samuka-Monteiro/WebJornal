@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- sweet alerts-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <style type="text/css">
+      body {
+    background-image: url("img/jornal.jpg");
+      }
+    </style>
+
+  <title>Web Jornal | Registo</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="card card-register mx-auto mt-5 mb-5">
+      <div class="card-header pl-5 bg-primary">Cria a tua conta</div>
+      <div class="card-body">
+          <form id="registarFormId" action="">
+            <div class="row">
+              <div class="col ml-4">
+                <div class="md-form mb-5">
+                  <i class="fa fa-user prefix grey-text"></i>
+                  <input type="text" id="formRegNome" class="form-control validate" required>
+                  <label data-error="errado" data-success="certo" for="formRegNome">Teu nome</label>
+                </div>
+
+                <div class="md-form mb-5">
+                  <i class="fa fa-envelope prefix grey-text"></i>
+                  <input type="email" id="formRegEmail" class="form-control validate" required>
+                  <label data-error="@_incluido" data-success="certo" for="formRegEmail">Teu email</label>
+                </div>
+
+                <div class="md-form mb-5">
+                  <i class="fa fa-lock prefix grey-text"></i>
+                  <input type="password" id="formRegPass" minlength="6" class="form-control validate" required>
+                  <label data-error="minimo_6_caracteres" data-success="certo"  for="formRegPass">Password</label>
+                </div>
+
+                <div class="md-form mb-5">
+                  <i class="fa fa-lock prefix grey-text"></i>
+                  <input type="password" id="formRegPass2" class="form-control validate" required>
+                  <label for="formRegPass2">Confirmar Password</label>
+                </div>
+              </div>
+              <div class="col mr-4">
+                <div class="md-form mb-5">
+                  <i class="fa fa-rss prefix grey-text"></i>
+                  <input type="url" id="formRegAdress" class="form-control validate">
+                  <label data-error="usar_http://" data-success="certo" for="formRegAdress">
+                    Endereço site colaborativo que já participaste
+                  </label>
+                </div>
+
+                <div class="md-form">
+                  <i class="fa fa-pencil prefix grey-text"></i>
+                  <textarea type="text" id="formRegAnswer" class="md-textarea form-control validate" rows="6" required></textarea>
+                  <label
+                  for="formRegAnswer">Porquê a Web Jornal?</label>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-primary">Enviar
+                <i class="fa fa-paper-plane-o ml-1"></i>
+              </button>
+            </div>
+          </form>
+          <div class="text-center">
+            <a class="d-block small mt-2" href="noticias">Voltar Pagina Inicial</a>
+          </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script type="text/javascript" src="../ajax/registo.js"></script>
+</body>
+
+</html>

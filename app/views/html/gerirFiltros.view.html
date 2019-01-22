@@ -1,0 +1,164 @@
+<div class="container pt-5 mt-5 pb-3" style="background-color:#FFFFFF">
+            <section class="magazine-section my-5 pl-4">
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center my-5">Filtros</h2>
+                <!-- Section description -->
+                <p class="text-center dark-grey-text w-responsive mx-auto mb-5">
+                    A web jornal disponibiliza um conjunto de filtros, os quais só o administrador tem acesso. Esses filtros alteram as notícias
+                    apresentadas na página 'Principais notícias', conforme a que foi escolhida. Lembrando que só pode escolher
+                    um filtro de cada vez.
+                </p>
+            </section>
+
+            <!--Table-->
+            <table class="table table-striped">
+                <!--Table head-->
+                <thead>
+                    <tr>
+
+                        <th>Filtros</th>
+                        <th>Descrição</th>
+                        <th>Ligar/Desligar</th>
+                    </tr>
+                </thead>
+                <!--Table head-->
+
+                <!--Table body-->
+                <tbody>
+                    <tr>
+                        <td>de mês/dia/ano a mês/dia/ano </td>
+                        <td>As notícias de <input type="date" name="" id="data1"> a <input type="date" name="" id="data2"></td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" id="switch4">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mais vistas</td>
+                        <td>As notícias mais vistas desta semana</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" id="switch0">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mais recentes</td>
+                        <td>As notícias mais recentes desta semana</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" id="switch1">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Menos vistas</td>
+                        <td>As notícias menos vistas desta semana</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" id="switch2">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mais antigas</td>
+                        <td>As notícias mais antigas</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" id="switch3">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+                <!--Table body-->
+
+            </table>
+            <!--Table-->
+
+        </div>
+
+
+
+
+
+        <!--<script>
+
+            function f() {
+                function toggleOn() {
+                    $('#toggle-trigger').bootstrapToggle('on')
+                }
+                console.log(document.getElementById('switch').value)
+            }
+
+
+        </script>-->
+        
+        <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+
+        .switch input {
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+    
+    <script type="text/javascript" src="../ajax/filtros.js"></script>

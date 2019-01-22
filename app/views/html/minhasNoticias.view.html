@@ -1,0 +1,40 @@
+<div  class="container pt-5 mt-5" style="background-color:#FFFFFF" >
+
+        <!-- Section: Blog v.3 -->
+        <section class="my-5 pl-3 pb-5">
+
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Minhas notícias</h2>
+            <!-- Section description -->
+            <p class="text-center dark-grey-text w-responsive mx-auto mb-5">Todas as minhas notícias.</p>
+
+        <div class="row mt-3 mb-3">
+            <div class="col-9 mt-3">
+                <button type="button" class="btn btn-sm" onclick=" validToken()" id="todos">Todas</button>
+                <button type="button" class="btn btn-sm" onclick="categoria('Arte')" id="arte">Arte</button>
+                <button type="button" class="btn btn-sm" onclick="categoria('Design')" id="design">Design</button>
+                <button type="button" class="btn btn-sm"  onclick="categoria('Tecnologias')" id="tecnologias">Tecnologias</button>
+                <button type="button" class="btn btn-sm"  onclick="categoria('Arquitetura')" id="arquitetura">Arquitetura</button>
+            </div>
+            <div class="col-3">
+                <!-- Search form -->
+                <form class="form-inline md-form form-sm">
+                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search" id="search1" type="text">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </form>
+
+            </div>
+        </div>
+        
+         <div id="divMinhasNoticias">
+           
+                
+
+        </div>
+
+        </section>
+        <!-- Section: Blog v.3 -->
+
+    </div>
+
+<script type="text/javascript" src="../ajax/minhasNoticias.js"></script>

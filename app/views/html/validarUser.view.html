@@ -1,0 +1,107 @@
+<div id="result"> </div>
+<script type="text/javascript" src="../ajax/validarUser.js"></script>
+<!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
+
+<div class="container pt-5 mt-5" style="background-color:#FFFFFF">
+        <section class="magazine-section my-5 pl-4 pb-5">
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Validar Registos</h2>
+            <!-- Section description -->
+            <p class="text-center dark-grey-text w-responsive mx-auto mb-5">
+                Valide os utilizadores que se registaram na Web jornal, seguindo esses <a href="/criteriosAdesao" target="_blank">critérios de avaliação</a>.
+            </p>
+            
+                 <div class="panel panel-default">
+                    <div id="TabelaRegistos" class="panel-body">
+                        
+                        <!--<div class="table-container">
+                            <table class="table table-filter">
+                                <tbody>
+                                    <tr data-status="" data-toggle="modal" data-target="#verUserModal">
+                                        <td>
+                                            <div class="media">
+                                                <a href="#" class="pull-left">
+                                                    <img src="../img/user.jpg" class="media-photo">
+                                                </a>
+                                                <div class="media-body">
+                                                    <span class="media-meta pull-right">06/05/2018</span>
+                                                    <h4 class="title">
+                                                        Tony Stark
+                                                        <span class=" media-meta pull-right">16:30</span>
+                                                    </h4>
+                                                    <p class="summary">tonystark@mail.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>-->
+                    </div>
+            
+            </div>
+            
+    <div id="verUserModal" class="modal fade right" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-full-height modal-right" role="document" style="height: auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Validar Utilizador</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <p class="modal-itens">
+                        Nome:
+                        <a id="modalIdNomeUser">Tony Stark</a>
+                    </p>
+                    <p class="modal-itens">
+                        Email:
+                        <a id="modalIdEmail">tonystark@mail.com</a>
+                    </p>
+                    <p class="modal-itens">
+                        Site Colaborativo:
+                        <a id="modalIdSite">https://pt.wikipedia.org/wiki/Tecnologia</a>
+                    </p>
+                    <p class="modal-itens">
+                        Resposta:
+                        <a id="modalIdResposta">Quero contribuir para que a escola esteja informada sobre as novas tecnologias que surgem no mercado e publicar sobre as noticias que estejam relacionadas com o curso.</a>
+                    </p>
+
+                </div>
+                <div class="modal-footer">
+                    <button id="btnValidar" type="button" class="btn btn-primary">Validar</button>
+                    <button id="btnRegeitar" type="button" class="btn btn-danger" data-toggle="modal" data-target="#motivoUserModal">Rejeitar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="motivoUserModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Apresentar Motivo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="formMotivo" action="">
+                        <div class="form-group">
+                            <label for="idMotivo">
+                                <h5>Motivo:</h5>
+                            </label>
+                            <br>
+                            <textarea id="idMotivo" cols="55" rows=3></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    <button id="btnRemover" type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>

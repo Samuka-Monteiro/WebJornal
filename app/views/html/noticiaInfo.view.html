@@ -1,0 +1,83 @@
+<div class="container pt-5 mt-5" style="background-color:#FFFFFF" >
+    <div id="informacaoNoticia">
+
+   
+    </div>
+    <div>
+        <div class="row pb-3 pr-5 mr-3 ">
+            <div class="col" style="text-align:end">
+                <button type="button" class="btn btn-primary px-3 justify-content-end" id="editar" data-toggle="modal" data-target="#editarNoticiaModal" onclick='editar()'>Editar</button>
+                <button type="button" class="btn btn-danger px-3 justify-content-end" id="delete" onclick='alerta()'>Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<!-- modal editar noticia-->
+<div class="modal fade right" id="editarNoticiaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-full-height modal-right" role="document" style="height: auto">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar notícia</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="formEditarNoticia">
+                <div class="modal-body">
+                    <input type="name" id="id" hidden>
+                    <div class="md-form mb-3">
+                        <input type="text" class="form-control validate" id="nomeE">
+                        <label data-error="wrong" data-success="right" for="nomeE" required>Titulo</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <input type="text" class="form-control validate" id="fonteE">
+                        <label data-error="wrong" data-success="right" for="fonteE">Fonte</label>
+                    </div>
+                    <div class="md-form mb-4">
+                        <input type="text" class="form-control validate" id="autorE">
+                        <label data-error="wrong" data-success="right" for="autorE">Autor</label>
+                    </div>
+                    <div class="md-form mb-4">
+                        <input type="text" class="form-control validate" id="linkE">
+                        <label data-error="wrong" data-success="right" for="linkE">Link da Imagem</label>
+                    </div>
+
+                    <div class="md-form">
+                        <textarea type="text" class="md-textarea form-control validate" rows="2" id="descricaoE" required></textarea>
+                        <label for="descricao">Descrição</label>
+                    </div>
+
+                    <div class="md-form">
+                        <textarea type="text" class="md-textarea form-control validate" rows="3" id="textoE" required></textarea>
+                        <label for="texto">Texto</label>
+                    </div>
+                    
+                    <div id="checkboxlist1">
+                        <div><input type="checkbox" value="Arte" class="chk" >Arte</div>
+                        <div><input type="checkbox" value="Design" class="chk" >Design</div>
+                        <div><input type="checkbox" value="Arquitetura" class="chk">Arquitetura</div>
+                        <div><input type="checkbox" value="Tecnologias" class="chk">Tecnologias</div>
+
+                    </div>
+
+                    
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <input type="submit" class="btn btn-primary" value="Editar" >
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="../ajax/infoNoticia.js"></script>
