@@ -102,29 +102,6 @@ function dataRegisto(date){
         
 }
 
-// function nome(id){
-//     $.ajax({
-//             type: 'GET',
-//             url: 'app/users/findUtilizador/' + id,
-        
-//             success: function (result) {
-//                 var myNames = [];
-                
-//                 if (localStorage.getItem('myNames')) {
-//                     myNames = JSON.parse(localStorage.removeItem(myNames));
-//                 }
-//                 console.log(result.nome)
-//                 myNames.push(result.nome);
-                
-
-//                 localStorage.setItem('Nomes', JSON.stringify(myNames));
-               
-//             }
-//         });
-        
-//         console.log(JSON.parse(localStorage.getItem('Nomes')))
-        
-// }
 function listarTodasNoticias(data) {
 
     var txt = "";

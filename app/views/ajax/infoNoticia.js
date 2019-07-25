@@ -128,20 +128,6 @@ function editar() {
             $('#textoE').val(response.texto)
             
             var selectedTags = document.getElementsByClassName("chk")
-            // for (var i =0; i < selCat.length; i++ ) {
-            //     console.log(selCat[i].value)
-            // }
-            
-            // $(".chk").each(function (i) {
-            //     if (response.categoria.indexOf(selCat[i].value) != -1) {
-            //                 selCat[i].checked = true
-                            
-            //     }
-            //     else {
-            //                 selCat[i].checked = false
-            //     }
-    
-            // });
             
             for (let j = 0; j < selectedTags.length; j++) {
              
