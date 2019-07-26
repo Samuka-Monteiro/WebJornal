@@ -4,8 +4,8 @@ const express = require('express'),
     bodyParser = require('body-parser'),
     queryParser = require('express-query-int'),
     passport = require('passport'),
-    session = require('express-session')
     cors = require('cors'),
+    session = require('express-session'),
     flash = require('connect-flash');
 
 global.nodemailer = require('nodemailer');
