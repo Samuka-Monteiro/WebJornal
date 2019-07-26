@@ -3,19 +3,6 @@ var nomeMY=""
 $(document).ready(()=>{
     
     validToken()
-    // $.ajax({
-    //     type: 'GET',
-    //     url: 'app/users/find/' + JSON.parse(localStorage.getItem('idUser')),
-    //     headers: {
-    //         'authorization': String(JSON.parse(localStorage.getItem("user")).token)
-    //     },
-    //     success: function (result2) {
-                                            
-    //         nomeMY=result2.nome                   
-                                            
-            
-    //     }
-    // });
 
 })
 function todasNoticias() {
@@ -143,10 +130,10 @@ function validToken(){
                                 
 
                          } else {
-                              window.location.replace("https://ea8-cfportela.c9users.io/paginaInicial");
+                              window.location.replace("https://localhost:8080/paginaInicial");
                          }
                     }else{
-                        window.location.replace("https://ea8-cfportela.c9users.io/paginaInicial");
+                        window.location.replace("https://localhost:8080/paginaInicial");
                     }
             },
             error: function (data) { console.log(data) } 
