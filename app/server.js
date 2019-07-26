@@ -4,12 +4,14 @@ const express = require('express'),
     bodyParser = require('body-parser'),
     queryParser = require('express-query-int'),
     passport = require('passport'),
+    cors = require('cors'),
     session = require('express-session'),
     flash = require('connect-flash');
 
 global.nodemailer = require('nodemailer');
 global.smtpTransport = require('nodemailer-smtp-transport');
 
+server.use(cors())
 server.use(flash());
 server.use(bodyParser.urlencoded({ extended: true }))
 server.use(bodyParser.json())
