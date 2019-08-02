@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon loader.js"
+    "start": "loader.js"
   },
   "author": "grupo ea8",
   "license": "ISC",
