@@ -1,6 +1,6 @@
 const express = require('express'),
     server = express(),
-    port = process.env.port || 8080,
+    port = process.env.PORT || 8080,
     bodyParser = require('body-parser'),
     queryParser = require('express-query-int'),
     passport = require('passport'),
